@@ -58,4 +58,26 @@ li {
       }
     }
   }
+  .icon-home{
+    display: block;
+    width: (40px * 100vw / $screenWidth);
+    height: (41px * 100vh / $screenHeight);
+    background: url("~@/assets/img/home.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: (35px * 100vh / $screenHeight);
+    right: (166px * 100vw / $screenWidth);
+    cursor: pointer;
+  }
+  .icon-back{
+    display: block;
+    width: (37px * 100vw / $screenWidth);
+    height: (39px * 100vh / $screenHeight);
+    background: url("~@/assets/img/back.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: (38px * 100vh / $screenHeight);
+    right: (82px * 100vw / $screenWidth);
+    cursor: pointer;
+  }
 }
