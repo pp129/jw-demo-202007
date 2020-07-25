@@ -72,6 +72,7 @@ export default {
       width: 182px;
       height: 228px;
       position: absolute;
+      cursor: pointer;
       &-gongan{
         background: url("~@/assets/img/智慧公安.png") no-repeat;
         background-size: 100% 100%;

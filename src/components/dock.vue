@@ -22,9 +22,9 @@ export default {
     return {
       docks: [
         {
-          name: 'About',
+          name: 'Home',
           content: '业务简介',
-          link: 'About',
+          link: 'Home',
           active: true
         },
         {
@@ -70,9 +70,9 @@ export default {
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: (630px * 100vw / $screenWidth);
-    height: (82px * 100vh / $screenHeight);
-    margin-left: (315px * 100vw / $screenWidth);
+    width: (630px * 100vw / $screenWidth2);
+    height: (82px * 100vh / $screenHeight2);
+    margin-left: (-315px * 100vw / $screenWidth2);
     background: url("~@/assets/img/bottom_lights.png") no-repeat;
     background-size: 100% 100%;
   }
@@ -80,35 +80,35 @@ export default {
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: (435px * 100vw / $screenWidth);
-    margin-left: (217.5px * 100vw / $screenWidth);
+    width: (435px * 100vw / $screenWidth2);
+    margin-left: (-217.5px * 100vw / $screenWidth2);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     .dock-items {
-        width: (167px * 100vw / $screenWidth);
-        height: (51px * 100vh / $screenHeight);
+        width: (167px * 100vw / $screenWidth2);
+        height: (51px * 100vh / $screenHeight2);
         cursor: pointer;
         background: url("~@/assets/img/icon-dock.png") no-repeat center 25px;
         text-align: center;
         span {
-            font-size: 3.2rem;
+            font-size: 2rem;
             font-family: NotoSansHans-Regular, serif;
             font-weight: 400;
             color: rgba(0, 180, 241, 1);
-            line-height: 6.4rem;
+            line-height: 4rem;
         }
         &-active {
-            width: (167px * 100vw / $screenWidth);
-            height: (51px * 100vh / $screenHeight);
+            width: (167px * 100vw / $screenWidth2);
+            height: (51px * 100vh / $screenHeight2);
             background: url("~@/assets/img/icon-dock-a.png") no-repeat center -20px;
             span {
                 color: #fff;
             }
         }
         &:hover {
-            width: (167px * 100vw / $screenWidth);
-            height: (51px * 100vh / $screenHeight);
+            width: (167px * 100vw / $screenWidth2);
+            height: (51px * 100vh / $screenHeight2);
             background: url("~@/assets/img/icon-dock-a.png") no-repeat center -20px;
             span {
                 color: #fff;
