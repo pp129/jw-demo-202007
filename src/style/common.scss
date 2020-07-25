@@ -58,6 +58,16 @@ li {
       }
     }
   }
+  .logo{
+    position: absolute;
+    bottom: (60px * 100vh / $screenHeight);
+    right: (28px * 100vw / $screenWidth);
+    z-index: 999;
+    width: (414px * 100vw / $screenWidth);
+    height: (43px * 100vh / $screenHeight);
+    background: url("~@/assets/img/logo-company.png") no-repeat;
+    background-size: 100% 100%;
+  }
   .icon-home{
     display: block;
     width: (40px * 100vw / $screenWidth);

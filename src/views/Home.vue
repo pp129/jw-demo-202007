@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped lang="scss" type="text/scss">
-  @import "~@/style/var.scss";
+  /*@import "~@/style/var.scss";*/
   // width: (XXXpx * 100vw / #{$screenWidth})
   // height: (XXXpx * 100vh / #{$screenHeight})
   // font-size: (XXXpx * 100vh / #{$screenHeight})
