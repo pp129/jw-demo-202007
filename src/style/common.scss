@@ -1,0 +1,66 @@
+$screenWidth: 1920px;
+$screenHeight: 1080px;
+// width: (XXXpx * 100vw / #{$screenWidth})
+// height: (XXXpx * 100vh / #{$screenHeight})
+// font-size: (XXXpx * 100vh / #{$screenHeight})
+html,
+body {
+  //font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100vw;
+  height: 100vh;
+  font-family: "NotoSansHans-Regular", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+p {
+  margin: 0;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url("~@/assets/img/bg.png") no-repeat;
+  background-size: 100% 100%;
+  .home {
+    > .main,
+    .dashboard .main {
+      width: 100%;
+      //height: calc(~"( 540 - 75 )*@{ph}vh");
+      position: absolute;
+      //top: calc(~"92*@{ph}vh");
+      overflow: hidden;
+      > .title {
+        font-family: "NotoSansHans-Bold", sans-serif;
+        //font-size: calc(~"29*@{ph}vh");
+        background: linear-gradient(
+          180deg,
+          rgba(183, 255, 255, 1) 0%,
+          rgba(113, 255, 255, 1) 34.4482421875%,
+          rgba(108, 255, 255, 1) 51.806640625%,
+          rgba(69, 191, 255, 1) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      > .content {
+        //width: calc(~"795*@{pw}vw");
+        //font-size: calc(~"18*@{ph}vh");
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        //text-indent: calc(~"36*@{pw}vw");
+        //line-height: calc(~"27*@{ph}vh");
+        //margin-top: calc(~"27*@{ph}vh");
+      }
+    }
+  }
+}
