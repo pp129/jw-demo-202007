@@ -6,6 +6,7 @@
 
 <style lang="scss">
   @import "~normalize.css/normalize.css";
-  @import "style/fonts";
-  @import "style/common";
+  @import "~@/style/fonts.scss";
+  @import "~@/style/var.scss";
+  @import "~@/style/common.scss";
 </style>
