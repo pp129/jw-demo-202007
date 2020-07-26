@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import GongAn from '../views/GongAn.vue'
 import HonoraryAndCertificate from '../views/HonoraryAndCertificate'
+import ClassicCase from '../views/ClassicCase'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,11 @@ const routes = [
     path: '/HonoraryAndCertificate',
     name: 'HonoraryAndCertificate',
     component: HonoraryAndCertificate
+  },
+  {
+    path: '/ClassicCase',
+    name: 'ClassicCase',
+    component: ClassicCase
   },
   {
     path: '/GongAn',
