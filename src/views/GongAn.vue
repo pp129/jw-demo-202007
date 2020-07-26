@@ -2,7 +2,7 @@
     <div class="main">
       <span class="icon-home" @click="home"></span>
       <span class="icon-back"></span>
-      <aside-menu :menus="menus" :menuIndex="menuIndex"></aside-menu>
+      <aside-menu :menus="menus" :menuIndex="menuIndex" @setActive="setActive"></aside-menu>
       <component :is="comp"></component>
       <div class="logo"></div>
     </div>
@@ -30,18 +30,26 @@ export default {
       comp: QinWu,
       menus: [
         {
+          id: 0,
+          pid: null,
           name: 'QinWu',
           comp: QinWu
         },
         {
+          id: 1,
+          pid: null,
           name: 'ZhiAn',
           comp: ZhiAn
         },
         {
+          id: 2,
+          pid: 1,
           name: 'JieMian',
           comp: JieMian
         },
         {
+          id: 3,
+          pid: 1,
           name: 'AnBao',
           comp: AnBao
         }
@@ -68,6 +76,12 @@ export default {
         }
         this.comp = this.menus[this.menuIndex].comp
       }, this.step)
+    },
+    setActive (index) {
+      clearInterval(this.timer)
+      this.menuIndex = index
+      this.comp = this.menus[this.menuIndex].comp
+      this.carousel()
     }
   }
 }
