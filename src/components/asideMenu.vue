@@ -6,7 +6,11 @@
 
 <script>
 export default {
-  name: 'asideMenu'
+  name: 'asideMenu',
+  props: {
+    menus: Array,
+    menuIndex: Number
+  }
 }
 </script>
 

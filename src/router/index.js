@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import GongAn from '../views/GongAn.vue'
+import HonoraryAndCertificate from '../views/HonoraryAndCertificate'
 
 Vue.use(VueRouter)
 
@@ -11,6 +12,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/HonoraryAndCertificate',
+    name: 'HonoraryAndCertificate',
+    component: HonoraryAndCertificate
   },
   {
     path: '/GongAn',

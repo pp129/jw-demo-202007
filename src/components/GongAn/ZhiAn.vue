@@ -1,8 +1,8 @@
 <template>
   <div class="content">
-    <div class="web"></div>
+<!--    <div class="web"></div>-->
     <div class="detail">
-      可视化勤务指挥平台，围绕“勤务态势、勤务部署、勤务督导、勤务研判、勤务信息、勤务管理、移动勤务”进行应用建设，从派出所到市局的跨层级一体化管理。满足治安警、巡特警、交警等细分警种不同的勤务应用场景需求。
+      平台基于 “智慧警务大脑”，以及十余载智慧公安业务积淀与技术能力，按照公安部的技术统一标准进行规范建设，并针对治安实际业务需求的精细化挖掘，服务涵盖社会治安防控系统的九大实战应用系统，打造“上下贯通、横向连通、标准统一、数据共享”的社会治安防控平台。
     </div>
     <div class="describe"></div>
   </div>
@@ -10,17 +10,17 @@
 
 <script>
 export default {
-  name: 'QinWu'
+  name: 'ZhiAn'
 }
 </script>
 
 <style scoped lang="scss" type="text/scss">
   .content{
-    width: (1418px * 100vw / $screenWidth);
-    height: (758px * 100vh / $screenHeight);
+    width: (1378px * 100vw / $screenWidth);
+    height: (822px * 100vh / $screenHeight);
     position: absolute;
-    top: (189px * 100vh / $screenHeight);
-    left: (337px * 100vw / $screenWidth);
+    top: (143px * 100vh / $screenHeight);
+    left: (355px * 100vw / $screenWidth);
     overflow: hidden;
     .web{
       width: (1142px * 100vw / $screenWidth);
@@ -32,7 +32,7 @@ export default {
       background-size: 100% 100%;
     }
     .detail{
-      width: (1106px * 100vw / $screenWidth);
+      width: (1378px * 100vw / $screenWidth);
       height: (128px * 100vh / $screenHeight);
       font-family: "SourceHanSerifCN-Medium", Helvetica, Arial, sans-serif;
       font-size:(24px * 100vh / $screenHeight);
@@ -45,13 +45,13 @@ export default {
       left: 0;
     }
     .describe{
-      width: (184px * 100vw / $screenWidth);
+      /*width: (184px * 100vw / $screenWidth);
       height: (365px * 100vh / $screenHeight);
       background: url("~@/assets/img/descirbe-qwksh.png") no-repeat;
       background-size: 100% 100%;
       position: absolute;
       top: (146px * 100vh / $screenHeight);
-      right: 0;
+      right: 0;*/
     }
   }
 </style>
