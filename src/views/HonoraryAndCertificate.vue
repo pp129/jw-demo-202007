@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import 'swiper/swiper-bundle.css'
+import 'swiper/dist/css/swiper.css'
 const { swiper, swiperSlide } = require('vue-awesome-swiper')
 export default {
   name: 'HonoraryAndCertificate',

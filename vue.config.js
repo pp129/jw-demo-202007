@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '',
   devServer: {
     hotOnly: false,
     open: true
