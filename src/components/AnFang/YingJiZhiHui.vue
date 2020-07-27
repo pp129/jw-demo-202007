@@ -1,0 +1,57 @@
+<template>
+  <div class="content">
+    <div class="web"></div>
+    <div class="detail">
+      应急指挥调度平台，是以警务综合平台、信息研判平台、地理信息平台、大数据中心为基础，以视频监控系统、GPS卫星定位系统、图像传输系统为辅助，以手机报警定位、警务勤务管理、现代通信技术等功能为支撑的公安指挥体系
+    </div>
+    <div class="describe"></div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'YingJiZhiHui'
+}
+</script>
+
+<style scoped lang="scss" type="text/scss">
+  .content{
+    width: (1555px * 100vw / $screenWidth);
+    height: (756px * 100vh / $screenHeight);
+    position: absolute;
+    top: (159px * 100vh / $screenHeight);
+    left: (326px * 100vw / $screenWidth);
+    overflow: hidden;
+    /*.web{
+      width: (1142px * 100vw / $screenWidth);
+      height: (632px * 100vh / $screenHeight);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url("~@/assets/img/web-bg.png") no-repeat;
+      background-size: 100% 100%;
+    }*/
+    .detail{
+      width: (1200px * 100vw / $screenWidth);
+      height: (128px * 100vh / $screenHeight);
+      font-family: "SourceHanSerifCN-Medium", Helvetica, Arial, sans-serif;
+      font-size:(24px * 100vh / $screenHeight);
+      font-weight:bold;
+      text-indent: (48px * 100vw / $screenWidth);
+      line-height: 1.5;
+      color:#FFFFFF;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    /*.describe{
+      width: (297px * 100vw / $screenWidth);
+      height: (508px * 100vh / $screenHeight);
+      background: url("~@/assets/img/describe-ab.png") no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      top: (48px * 100vh / $screenHeight);
+      right: 0;
+    }*/
+  }
+</style>

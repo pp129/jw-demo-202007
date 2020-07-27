@@ -14,14 +14,12 @@ import QinWu from '@/components/GongAn/QinWu'
 import ZhiAn from '@/components/GongAn/ZhiAn'
 import JieMian from '@/components/GongAn/JieMian'
 import AnBao from '@/components/GongAn/AnBao'
+import GongJiao from '@/components/GongAn/GongJiao'
+import XiaoQu from '@/components/GongAn/XiaoQu'
+import JianChaZhan from '@/components/GongAn/JianChaZhan'
 export default {
   name: 'GongAn',
-  components: {
-    asideMenu,
-    QinWu,
-    JieMian,
-    AnBao
-  },
+  components: { asideMenu },
   data () {
     return {
       timer: null,
@@ -32,26 +30,44 @@ export default {
         {
           id: 0,
           pid: null,
-          name: 'QinWu',
+          name: '可视化勤务指挥平台',
           comp: QinWu
         },
         {
           id: 1,
           pid: null,
-          name: 'ZhiAn',
+          name: '社会治安防控体系',
           comp: ZhiAn
         },
         {
           id: 2,
           pid: 1,
-          name: 'JieMian',
+          name: '智慧街面巡防系统',
           comp: JieMian
         },
         {
           id: 3,
           pid: 1,
-          name: 'AnBao',
+          name: '大型活动安保系统',
           comp: AnBao
+        },
+        {
+          id: 4,
+          pid: 1,
+          name: '地铁公交防控',
+          comp: GongJiao
+        },
+        {
+          id: 5,
+          pid: 1,
+          name: '智慧安防小区',
+          comp: XiaoQu
+        },
+        {
+          id: 6,
+          pid: 1,
+          name: '公安检查站管控',
+          comp: JianChaZhan
         }
       ]
     }

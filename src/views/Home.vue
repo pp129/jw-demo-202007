@@ -5,10 +5,10 @@
     <div class="box">
       面向公安、交警、安防、军营等领域，基于北斗/GPS、物联网、云计算、5G、大数据和人工智能等技术， 汇聚警员、警情、警备、勤务、视频、事件等全要素警务资源，提供勤务实战、交通安保、治安防控、便民服务、大数据分析研判等多个方面的解决方案和信息服务。构建高度集成、高度共享、高度智能的智慧警务新格局，全面实现警务工作信息化、智能化。
     </div>
-    <div class="menu menu-gongan" @click="toGongAn"></div>
-    <div class="menu menu-jiaojing"></div>
-    <div class="menu menu-anfang"></div>
-    <div class="menu menu-junying"></div>
+    <div class="menu menu-gongan" @click="routerTo('GongAn')"></div>
+    <div class="menu menu-jiaojing" @click="routerTo('JiaoJing')"></div>
+    <div class="menu menu-anfang" @click="routerTo('AnFang')"></div>
+    <div class="menu menu-junying" @click="routerTo('JunYing')"></div>
     <dock></dock>
   </div>
 </template>
@@ -20,8 +20,8 @@ export default {
     dock: dock
   },
   methods: {
-    toGongAn () {
-      this.$router.push({ name: 'GongAn' })
+    routerTo (name) {
+      this.$router.push({ name: name })
     }
   }
 }
