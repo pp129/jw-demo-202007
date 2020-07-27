@@ -65,7 +65,7 @@ export default {
 </script>
 
 <style scoped lang="scss" type="text/scss">
-  @import "~@/style/var.scss";
+  /*@import "~@/style/var.scss";*/
   .dock {
     position: absolute;
     bottom: 0;
@@ -86,10 +86,11 @@ export default {
     flex-direction: row;
     justify-content: space-around;
     .dock-items {
-        width: (167px * 100vw / $screenWidth2);
-        height: (51px * 100vh / $screenHeight2);
+        width: (233px * 100vw / $screenWidth);
+        height: (84px * 100vh / $screenHeight);
         cursor: pointer;
-        background: url("~@/assets/img/icon-dock.png") no-repeat center 25px;
+        background: url("~@/assets/img/icon-dock.png") no-repeat;
+      background-size: 100% 100%;
         text-align: center;
         span {
             font-size: 2rem;
@@ -101,7 +102,8 @@ export default {
         &-active {
             width: (167px * 100vw / $screenWidth2);
             height: (51px * 100vh / $screenHeight2);
-            background: url("~@/assets/img/icon-dock-a.png") no-repeat center -20px;
+            background: url("~@/assets/img/icon-dock-a.png") no-repeat center (-20px * 100vh / $screenHeight);
+          background-size: 100% 100%;
             span {
                 color: #fff;
             }
@@ -109,7 +111,8 @@ export default {
         &:hover {
             width: (167px * 100vw / $screenWidth2);
             height: (51px * 100vh / $screenHeight2);
-            background: url("~@/assets/img/icon-dock-a.png") no-repeat center -20px;
+          background: url("~@/assets/img/icon-dock-a.png") no-repeat center (-20px * 100vh / $screenHeight);
+          background-size: 100% 100%;
             span {
                 color: #fff;
             }

@@ -52,8 +52,8 @@ export default {
       box-sizing: border-box;
     }
     .menu{
-      width: 182px;
-      height: 228px;
+      width: (182px * 100vw / $screenWidth);
+      height: (228px * 100vh / $screenHeight);
       position: absolute;
       cursor: pointer;
       &-gongan{
