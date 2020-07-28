@@ -1,6 +1,8 @@
 <template>
   <div class="content">
-    <div class="web"></div>
+    <div class="web">
+      <div class="screenshot"></div>
+    </div>
     <div class="detail">
       为规范街面巡防工作开展，建设功能复合型、场景多元化、信息高度互通的警务站与警力巡防体系。提供集街面安全态势监测、识疑查危、数据汇聚、预警研判、统计分析、指挥调度功能为一体的信息系
     </div>
@@ -30,6 +32,16 @@ export default {
       left: 0;
       background: url("~@/assets/img/web-bg.png") no-repeat;
       background-size: 100% 100%;
+      .screenshot{
+        width: 91%;
+        height: 83%;
+        background: url("~@/assets/img/智慧公安/智慧街面巡防.png") no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: (55px * 100vh / $screenHeight);
+        left: (43px * 100vw / $screenWidth);
+        border-radius: 1vw;
+      }
     }
     .detail{
       width: (1381px * 100vw / $screenWidth);

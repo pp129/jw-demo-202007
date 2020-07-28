@@ -1,7 +1,6 @@
 <template>
   <div class="main case">
-    <span class="icon-home" @click="home"></span>
-    <span class="icon-back"></span>
+    <span class="icon-back" @click="home"></span>
     <span class="case-title">{{ caseTitle }}</span>
     <swiper :options="swiperOption" ref="swiper" @slideChange="slideChange">
       <swiper-slide><div class="item item-1"></div></swiper-slide>

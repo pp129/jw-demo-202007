@@ -1,8 +1,9 @@
 <template>
   <div class="content">
-    <div class="web"></div>
+    <div class="web">
+      <div class="screenshot"></div>
+    </div>
     <div class="detail">
-      地铁/公交站点，线路等业务领域的人，物，事件，警力进行全要素信息接入与数据分析应用。
     </div>
     <div class="describe"></div>
   </div>
@@ -22,7 +23,7 @@ export default {
     top: (159px * 100vh / $screenHeight);
     left: (326px * 100vw / $screenWidth);
     overflow: hidden;
-    /*.web{
+    .web{
       width: (1142px * 100vw / $screenWidth);
       height: (632px * 100vh / $screenHeight);
       position: absolute;
@@ -30,7 +31,17 @@ export default {
       left: 0;
       background: url("~@/assets/img/web-bg.png") no-repeat;
       background-size: 100% 100%;
-    }*/
+      .screenshot{
+        width: 91%;
+        height: 83%;
+        background: url("~@/assets/img/智慧公安/地铁安保.jpg") no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: (55px * 100vh / $screenHeight);
+        left: (43px * 100vw / $screenWidth);
+        border-radius: 1vw;
+      }
+    }
     .detail{
       width: (1381px * 100vw / $screenWidth);
       height: (78px * 100vh / $screenHeight);

@@ -1,6 +1,8 @@
 <template>
   <div class="content">
-    <div class="web"></div>
+    <div class="web">
+      <div class="screenshot"></div>
+    </div>
     <div class="detail">
       可视化勤务指挥平台，围绕“勤务态势、勤务部署、勤务督导、勤务研判、勤务信息、勤务管理、移动勤务”进行应用建设，从派出所到市局的跨层级一体化管理。满足治安警、巡特警、交警等细分警种不同的勤务应用场景需求。
     </div>
@@ -30,6 +32,16 @@ export default {
       left: 0;
       background: url("~@/assets/img/web-bg.png") no-repeat;
       background-size: 100% 100%;
+      .screenshot{
+        width: 91%;
+        height: 83%;
+        background: url("~@/assets/img/智慧公安/可视化勤务指挥平台.jpg") no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: (55px * 100vh / $screenHeight);
+        left: (43px * 100vw / $screenWidth);
+        border-radius: 1vw;
+      }
     }
     .detail{
       width: (1106px * 100vw / $screenWidth);

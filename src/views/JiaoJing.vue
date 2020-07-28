@@ -1,7 +1,6 @@
 <template>
   <div class="main">
-    <span class="icon-home" @click="home"></span>
-    <span class="icon-back"></span>
+    <span class="icon-back" @click="home"></span>
     <aside-menu :menus="menus" :menuIndex="menuIndex" @setActive="setActive"></aside-menu>
     <component :is="comp"></component>
     <div class="logo"></div>
@@ -14,13 +13,14 @@ import TeQin from '@/components/JiaoJing/TeQin'
 import DaShuJu from '@/components/JiaoJing/DaShuJu'
 import JiaoTongFuWu from '@/components/JiaoJing/JiaoTongFuWu'
 import GuanKong from '@/components/JiaoJing/GuanKong'
+import BanMaXian from '@/components/JiaoJing/BanMaXian'
 export default {
   name: 'JiaoJing',
   components: { asideMenu },
   data () {
     return {
       timer: null,
-      step: 5000, // 30000
+      step: 30000, // 30000
       menuIndex: 0,
       menus: [
         {
@@ -40,6 +40,11 @@ export default {
           comp: JiaoTongFuWu
         }, {
           id: 3,
+          pid: null,
+          name: '智慧斑马线',
+          comp: BanMaXian
+        }, {
+          id: 4,
           pid: null,
           name: '智慧交通管控',
           comp: GuanKong

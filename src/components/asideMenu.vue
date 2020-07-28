@@ -21,6 +21,10 @@ export default {
           e.active = false
         })
         this.menus[newValue].active = true
+        const item = _.find(this.menus, { id: this.menus[newValue].pid })
+        if (item) {
+          item.active = true
+        }
         this.setClass()
       },
       deep: true
@@ -40,6 +44,10 @@ export default {
         e.active = false
       })
       this.menus[this.menuIndex].active = true
+      const item = _.find(this.menus, { id: this.menus[this.menuIndex].pid })
+      if (item) {
+        item.active = true
+      }
       this.$nextTick(() => {
         // console.log(this.$refs)
         this.setClass()

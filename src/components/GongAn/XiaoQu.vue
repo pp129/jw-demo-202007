@@ -1,8 +1,9 @@
 <template>
   <div class="content">
-    <div class="web"></div>
+    <div class="web">
+      <div class="screenshot"></div>
+    </div>
     <div class="detail">
-      小区智感设备采集数据，多维情报分析研判。实现提前预警、及时发现违法犯罪行为及存在的安全隐患，并及时进行精准打击，解决社区安全防范难、打击难的现实难题。
     </div>
     <div class="describe"></div>
   </div>
@@ -22,7 +23,7 @@ export default {
     top: (159px * 100vh / $screenHeight);
     left: (326px * 100vw / $screenWidth);
     overflow: hidden;
-    /*.web{
+    .web{
       width: (1142px * 100vw / $screenWidth);
       height: (632px * 100vh / $screenHeight);
       position: absolute;
@@ -30,7 +31,17 @@ export default {
       left: 0;
       background: url("~@/assets/img/web-bg.png") no-repeat;
       background-size: 100% 100%;
-    }*/
+      .screenshot{
+        width: 91%;
+        height: 83%;
+        background: url("~@/assets/img/智慧公安/安防小区2.jpg") no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: (55px * 100vh / $screenHeight);
+        left: (43px * 100vw / $screenWidth);
+        border-radius: 1vw;
+      }
+    }
     .detail{
       width: (1381px * 100vw / $screenWidth);
       height: (78px * 100vh / $screenHeight);

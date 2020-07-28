@@ -1,7 +1,6 @@
 <template>
     <div class="main">
-      <span class="icon-home" @click="home"></span>
-      <span class="icon-back"></span>
+      <span class="icon-back" @click="home"></span>
       <aside-menu :menus="menus" :menuIndex="menuIndex" @setActive="setActive"></aside-menu>
       <component :is="comp"></component>
       <div class="logo"></div>
@@ -9,7 +8,7 @@
 </template>
 
 <script>
-import asideMenu from '../components/asideMenu'
+import asideMenu from '@/components/asideMenu'
 import QinWu from '@/components/GongAn/QinWu'
 import ZhiAn from '@/components/GongAn/ZhiAn'
 import JieMian from '@/components/GongAn/JieMian'
@@ -23,7 +22,7 @@ export default {
   data () {
     return {
       timer: null,
-      step: 5000, // 30000
+      step: 30000, // 30000
       menuIndex: 0,
       comp: QinWu,
       menus: [

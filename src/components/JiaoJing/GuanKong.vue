@@ -16,21 +16,21 @@ export default {
 
 <style scoped lang="scss" type="text/scss">
   .content{
-    width: (1555px * 100vw / $screenWidth);
-    height: (756px * 100vh / $screenHeight);
+    width: (1479px * 100vw / $screenWidth);
+    height: (729.3px * 100vh / $screenHeight);
     position: absolute;
-    top: (159px * 100vh / $screenHeight);
-    left: (326px * 100vw / $screenWidth);
+    top: (199px * 100vh / $screenHeight);
+    left: (341px * 100vw / $screenWidth);
     overflow: hidden;
-    /*.web{
-      width: (1142px * 100vw / $screenWidth);
-      height: (632px * 100vh / $screenHeight);
+    .web{
+      width: (1063px * 100vw / $screenWidth);
+      height: (503px * 100vh / $screenHeight);
       position: absolute;
       top: 0;
       left: 0;
-      background: url("~@/assets/img/web-bg.png") no-repeat;
+      background: url("~@/assets/img/智慧交通管控.png") no-repeat;
       background-size: 100% 100%;
-    }*/
+    }
     .detail{
       width: (1355px * 100vw / $screenWidth);
       height: (131px * 100vh / $screenHeight);
@@ -44,14 +44,14 @@ export default {
       bottom: 0;
       left: 0;
     }
-    /*.describe{
-      width: (297px * 100vw / $screenWidth);
-      height: (508px * 100vh / $screenHeight);
-      background: url("~@/assets/img/describe-ab.png") no-repeat;
+    .describe{
+      width: (286px * 100vw / $screenWidth);
+      height: (430px * 100vh / $screenHeight);
+      background: url("~@/assets/img/describe-zhjt.png") no-repeat;
       background-size: 100% 100%;
       position: absolute;
       top: (48px * 100vh / $screenHeight);
       right: 0;
-    }*/
+    }
   }
 </style>

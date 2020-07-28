@@ -1,7 +1,6 @@
 <template>
   <div class="main">
-    <span class="icon-home" @click="home"></span>
-    <span class="icon-back"></span>
+    <span class="icon-back" @click="home"></span>
     <aside-menu :menus="menus" :menuIndex="menuIndex" @setActive="setActive"></aside-menu>
     <component :is="comp"></component>
     <div class="logo"></div>
@@ -19,7 +18,7 @@ export default {
   data () {
     return {
       timer: null,
-      step: 5000, // 30000
+      step: 30000, // 30000
       menuIndex: 0,
       menus: [
         {

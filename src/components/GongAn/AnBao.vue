@@ -1,8 +1,10 @@
 <template>
   <div class="content">
-    <div class="web"></div>
+    <div class="web">
+      <div class="screenshot"></div>
+    </div>
     <div class="detail">
-      为规范街面巡防工作开展，建设功能复合型、场景多元化、信息高度互通的警务站与警力巡防体系。提供集街面安全态势监测、识疑查危、数据汇聚、预警研判、统计分析、指挥调度功能为一体的信息系
+      构建活动管理、态势呈现、业务协同、数据接入的管理需求，对突发状况进行应急指挥处理，实现对大型活动现场的安全管控与联动指挥。
     </div>
     <div class="describe"></div>
   </div>
@@ -30,6 +32,16 @@ export default {
       left: 0;
       background: url("~@/assets/img/web-bg.png") no-repeat;
       background-size: 100% 100%;
+      .screenshot{
+        width: 91%;
+        height: 83%;
+        background: url("~@/assets/img/智慧公安/大型活动安保.png") no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: (55px * 100vh / $screenHeight);
+        left: (43px * 100vw / $screenWidth);
+        border-radius: 1vw;
+      }
     }
     .detail{
       width: (1381px * 100vw / $screenWidth);

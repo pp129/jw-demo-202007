@@ -1,13 +1,13 @@
 <template>
     <div class="main honor">
-      <span class="icon-home" @click="home"></span>
-      <span class="icon-back"></span>
+      <span class="icon-back" @click="home"></span>
         <swiper :options="swiperOption">
             <swiper-slide><div class="item item-1"></div></swiper-slide>
             <swiper-slide><div class="item item-2"></div></swiper-slide>
             <swiper-slide><div class="item item-3"></div></swiper-slide>
             <swiper-slide><div class="item item-4"></div></swiper-slide>
             <swiper-slide><div class="item item-5"></div></swiper-slide>
+            <swiper-slide><div class="item item-6"></div></swiper-slide>
         </swiper>
         <div class="list">
             <div class="item">
@@ -144,6 +144,12 @@ export default {
           width: (385px * 100vw / $screenWidth);
           height: (273px * 100vh / $screenHeight);
         }
+      &-6 {
+        background: url("~@/assets/img/honor_6.png") no-repeat;
+        background-size: 100% 100%;
+        width: (318px * 100vw / $screenWidth);
+        height: (220px * 100vh / $screenHeight);
+      }
     }
     &-active{
       background: url("~@/assets/img/honor-border.png") no-repeat;
@@ -168,6 +174,10 @@ export default {
           height: 99%;
         }
         &-5{
+          width: 85%;
+          height: 89%;
+        }
+        &-6{
           width: 85%;
           height: 89%;
         }
