@@ -3,7 +3,7 @@
       <span class="icon-back" @click="home"></span>
       <aside-menu :menus="menus" :menuIndex="menuIndex" @setActive="setActive"></aside-menu>
       <component :is="comp"></component>
-      <div class="logo"></div>
+<!--      <div class="logo"></div>-->
     </div>
 </template>
 

@@ -11,7 +11,7 @@
       <span>场馆三维态势</span>
       <span>力量智能调配</span>
     </div>
-    <div class="logo"></div>
+<!--    <div class="logo"></div>-->
   </div>
 </template>
 
