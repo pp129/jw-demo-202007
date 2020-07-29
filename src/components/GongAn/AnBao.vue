@@ -6,7 +6,11 @@
     <div class="detail">
       构建活动管理、态势呈现、业务协同、数据接入的管理需求，对突发状况进行应急指挥处理，实现对大型活动现场的安全管控与联动指挥。
     </div>
-    <div class="describe"></div>
+    <div class="describe text-shadow">
+      <span>全局可视动态感知</span>
+      <span>全程可控归档追溯</span>
+      <span>全网可呼融合通信</span>
+    </div>
   </div>
 </template>
 
@@ -57,13 +61,17 @@ export default {
       left: 0;
     }
     .describe{
-      width: (297px * 100vw / $screenWidth);
-      height: (508px * 100vh / $screenHeight);
-      background: url("~@/assets/img/describe-ab.png") no-repeat;
-      background-size: 100% 100%;
+      width: (300px * 100vw / $screenWidth);
+      //height: (225px * 100vh / $screenHeight);
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
       position: absolute;
-      top: (48px * 100vh / $screenHeight);
+      top: (148px * 100vh / $screenHeight);
       right: 0;
+      span{
+        margin-bottom: (69px * 100vh / $screenHeight);
+      }
     }
   }
 </style>

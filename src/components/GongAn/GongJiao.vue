@@ -6,7 +6,11 @@
     <div class="detail">
       地铁/公交站点，线路等业务领域的人，物，事件，警力进行全要素信息接入与数据分析应用。
     </div>
-    <div class="describe"></div>
+    <div class="describe text-shadow">
+      <span>密织智能感知防控网</span>
+      <span>加强场景多维数据采集</span>
+      <span>有力保障治安防控</span>
+    </div>
   </div>
 </template>
 
@@ -56,14 +60,18 @@ export default {
       bottom: 0;
       left: 0;
     }
-    /*.describe{
-      width: (297px * 100vw / $screenWidth);
-      height: (508px * 100vh / $screenHeight);
-      background: url("~@/assets/img/describe-ab.png") no-repeat;
-      background-size: 100% 100%;
+    .describe{
+      width: (300px * 100vw / $screenWidth);
+      //height: (225px * 100vh / $screenHeight);
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
       position: absolute;
-      top: (48px * 100vh / $screenHeight);
+      top: (148px * 100vh / $screenHeight);
       right: 0;
-    }*/
+      span{
+        margin-bottom: (69px * 100vh / $screenHeight);
+      }
+    }
   }
 </style>

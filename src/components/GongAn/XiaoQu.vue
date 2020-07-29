@@ -6,7 +6,12 @@
     <div class="detail">
       小区智感设备采集数据，多维情报分析研判。实现提前预警、及时发现违法犯罪行为及存在的安全隐患，并及时进行精准打击，解决社区安全防范难、打击难的现实难题。
     </div>
-    <div class="describe"></div>
+    <div class="describe text-shadow">
+      <span>警务建设更多元</span>
+      <span>信息采集更智能</span>
+      <span>打击防范更精准</span>
+      <span>服务群众更便捷</span>
+    </div>
   </div>
 </template>
 
@@ -56,14 +61,18 @@ export default {
       bottom: 0;
       left: 0;
     }
-    /*.describe{
-      width: (297px * 100vw / $screenWidth);
-      height: (508px * 100vh / $screenHeight);
-      background: url("~@/assets/img/describe-ab.png") no-repeat;
-      background-size: 100% 100%;
+    .describe{
+      width: (300px * 100vw / $screenWidth);
+      //height: (300px * 100vh / $screenHeight);
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
       position: absolute;
-      top: (48px * 100vh / $screenHeight);
+      top: (148px * 100vh / $screenHeight);
       right: 0;
-    }*/
+      span{
+        margin-bottom: (69px * 100vh / $screenHeight);
+      }
+    }
   }
 </style>

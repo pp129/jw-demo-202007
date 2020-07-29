@@ -5,7 +5,12 @@
     <div class="detail">
       紧密结合武警实际业务需求的实战系统， 通过对反恐处突任务的流程化、智能化管理，保证反恐处突的及时性、准确性，大幅提升掌握现场、指挥作战的能力。通过三维建模，并整合各类安保活动资源，实现安保可视化全程跟踪、应急指挥调度，确保场馆安保“可视、可防、可控”
     </div>
-    <div class="describe"></div>
+    <div class="describe text-shadow">
+      <span>人枪分离预警</span>
+      <span>任务实时监控</span>
+      <span>场馆三维态势</span>
+      <span>力量智能调配</span>
+    </div>
     <div class="logo"></div>
   </div>
 </template>
@@ -50,13 +55,17 @@ export default {
       left: (132px * 100vw / $screenWidth);
     }
     .describe{
-      width: (389.3px * 100vw / $screenWidth);
-      height: (430px * 100vh / $screenHeight);
-      background: url("~@/assets/img/descirbe-wujing.png") no-repeat;
-      background-size: 100% 100%;
+      width: (154px * 100vw / $screenWidth);
+      //height: (300px * 100vh / $screenHeight);
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
       position: absolute;
-      top: (259px * 100vh / $screenHeight);
-      right: (54px * 100vw / $screenWidth);
+      top: (318px * 100vh / $screenHeight);
+      right: (277px * 100vw / $screenWidth);
+      span{
+        margin-bottom: (69px * 100vh / $screenHeight);
+      }
     }
   }
 </style>

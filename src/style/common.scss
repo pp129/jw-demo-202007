@@ -92,4 +92,11 @@ li {
     right: (166px * 100vw / $screenWidth);
     cursor: pointer;
   }
+  .text-shadow{
+    font-size:(26px * 100vh / $screenHeight);
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    text-shadow:0 0 0.6em #009cff,
+    -0 -0 0.6em #009cff;
+  }
 }
