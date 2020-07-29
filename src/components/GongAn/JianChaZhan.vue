@@ -4,6 +4,7 @@
       <div class="screenshot"></div>
     </div>
     <div class="detail">
+      面向治安支队和指挥中心国境，省际，市际公安检查站业务。围绕国境，省际，市际公安检查站，建立集公安检查站运行状态和人车物过检自动监测、数据汇聚、统计分析、预警研判、决策和指挥控制为一体的信息系统。
     </div>
     <div class="describe"></div>
   </div>

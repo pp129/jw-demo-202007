@@ -4,6 +4,7 @@
       <div class="screenshot"></div>
     </div>
     <div class="detail">
+      小区智感设备采集数据，多维情报分析研判。实现提前预警、及时发现违法犯罪行为及存在的安全隐患，并及时进行精准打击，解决社区安全防范难、打击难的现实难题。
     </div>
     <div class="describe"></div>
   </div>

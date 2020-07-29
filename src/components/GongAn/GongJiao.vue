@@ -4,6 +4,7 @@
       <div class="screenshot"></div>
     </div>
     <div class="detail">
+      地铁/公交站点，线路等业务领域的人，物，事件，警力进行全要素信息接入与数据分析应用。
     </div>
     <div class="describe"></div>
   </div>

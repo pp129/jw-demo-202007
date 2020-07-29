@@ -8,6 +8,12 @@
             <swiper-slide><div class="item item-4"></div></swiper-slide>
             <swiper-slide><div class="item item-5"></div></swiper-slide>
             <swiper-slide><div class="item item-6"></div></swiper-slide>
+            <swiper-slide><div class="item item-7"></div></swiper-slide>
+            <swiper-slide><div class="item item-8"></div></swiper-slide>
+            <swiper-slide><div class="item item-9"></div></swiper-slide>
+            <swiper-slide><div class="item item-10"></div></swiper-slide>
+            <swiper-slide><div class="item item-11"></div></swiper-slide>
+            <swiper-slide><div class="item item-12"></div></swiper-slide>
         </swiper>
         <div class="list">
             <div class="item">
@@ -114,41 +120,83 @@ export default {
       position: absolute;
       top: (14px * 100vh / $screenHeight);
       left: (19px * 100vw / $screenWidth);*/
-        &-1 {
-          background: url("~@/assets/img/honor_1.png") no-repeat;
-          background-size: 100% 100%;
-          width: (394px * 100vw / $screenWidth);
-          height: (278px * 100vh / $screenHeight);
-        }
-        &-2 {
-          background: url("~@/assets/img/honor_2.png") no-repeat;
-          background-size: 100% 100%;
-          width: (377px * 100vw / $screenWidth);
-          height: (505px * 100vh / $screenHeight);
-        }
-        &-3 {
-          background: url("~@/assets/img/honor_3.png") no-repeat;
-          background-size: 100% 100%;
-          width: (445px * 100vw / $screenWidth);
-          height: (606px * 100vh / $screenHeight);
-        }
-        &-4 {
-          background: url("~@/assets/img/honor_4.png") no-repeat;
-          background-size: 100% 100%;
-          width: (374px * 100vw / $screenWidth);
-          height: (508px * 100vh / $screenHeight);
-        }
-        &-5 {
-          background: url("~@/assets/img/honor_5.png") no-repeat;
-          background-size: 100% 100%;
-          width: (385px * 100vw / $screenWidth);
-          height: (273px * 100vh / $screenHeight);
-        }
+      &-1 {
+        background: url("~@/assets/img/honor_1.png") no-repeat;
+        background-size: 100% 100%;
+        width: (394px * 100vw / $screenWidth);
+        height: (278px * 100vh / $screenHeight);
+      }
+      &-2 {
+        background: url("~@/assets/img/honor_2.png") no-repeat;
+        background-size: 100% 100%;
+        width: (377px * 100vw / $screenWidth);
+        height: (505px * 100vh / $screenHeight);
+      }
+      &-3 {
+        background: url("~@/assets/img/honor_3.png") no-repeat;
+        background-size: 100% 100%;
+        width: (445px * 100vw / $screenWidth);
+        height: (606px * 100vh / $screenHeight);
+      }
+      &-4 {
+        background: url("~@/assets/img/honor_4.png") no-repeat;
+        background-size: 100% 100%;
+        width: (374px * 100vw / $screenWidth);
+        height: (508px * 100vh / $screenHeight);
+      }
+      &-5 {
+        background: url("~@/assets/img/honor_5.png") no-repeat;
+        background-size: 100% 100%;
+        width: (385px * 100vw / $screenWidth);
+        height: (273px * 100vh / $screenHeight);
+      }
       &-6 {
         background: url("~@/assets/img/honor_6.png") no-repeat;
         background-size: 100% 100%;
         width: (318px * 100vw / $screenWidth);
         height: (220px * 100vh / $screenHeight);
+      }
+      &-6 {
+        background: url("~@/assets/img/honor_6.png") no-repeat;
+        background-size: 100% 100%;
+        width: (318px * 100vw / $screenWidth);
+        height: (220px * 100vh / $screenHeight);
+      }
+      &-7 {
+        background: url("~@/assets/img/honor_7.png") no-repeat;
+        background-size: 100% 100%;
+        width: (230px * 100vw / $screenWidth);
+        height: (161px * 100vh / $screenHeight);
+      }
+      &-8 {
+        background: url("~@/assets/img/honor_8.png") no-repeat;
+        background-size: 100% 100%;
+        width: (143px * 100vw / $screenWidth);
+        height: (202px * 100vh / $screenHeight);
+      }
+      &-9 {
+        background: url("~@/assets/img/honor_9.png") no-repeat;
+        background-size: 100% 100%;
+        width: (199px * 100vw / $screenWidth);
+        height: (281px * 100vh / $screenHeight);
+      }
+      &-10 {
+        background: url("~@/assets/img/honor_10.png") no-repeat;
+        background-size: 100% 100%;
+        width: (141px * 100vw / $screenWidth);
+        height: (199px * 100vh / $screenHeight);
+      }
+      &-11 {
+        background: url("~@/assets/img/honor_11.png") no-repeat;
+        background-size: 100% 100%;
+        width: (200px * 100vw / $screenWidth);
+        height: (274px * 100vh / $screenHeight);
+      }
+      &-12 {
+        background: url("~@/assets/img/honor_12.png") no-repeat;
+        background-size: 100% 100%;
+        width: (227px * 100vw / $screenWidth);
+        height: (317px * 100vh / $screenHeight);
       }
     }
     &-active{
@@ -178,6 +226,30 @@ export default {
           height: 89%;
         }
         &-6{
+          width: 85%;
+          height: 89%;
+        }
+        &-7{
+           width: 85%;
+           height: 89%;
+         }
+        &-8{
+          width: 85%;
+          height: 89%;
+        }
+        &-9{
+          width: 85%;
+          height: 89%;
+        }
+        &-10{
+          width: 85%;
+          height: 89%;
+        }
+        &-11{
+          width: 85%;
+          height: 89%;
+        }
+        &-12{
           width: 85%;
           height: 89%;
         }
