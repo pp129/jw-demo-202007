@@ -16,6 +16,7 @@ import AnBao from '@/components/GongAn/AnBao'
 import GongJiao from '@/components/GongAn/GongJiao'
 import XiaoQu from '@/components/GongAn/XiaoQu'
 import JianChaZhan from '@/components/GongAn/JianChaZhan'
+import WeiBao from '@/components/GongAn/WeiBao'
 export default {
   name: 'GongAn',
   components: { asideMenu },
@@ -67,6 +68,12 @@ export default {
           pid: 1,
           name: '公安检查站管控',
           comp: JianChaZhan
+        },
+        {
+          id: 7,
+          pid: 1,
+          name: '危爆物品管控系统',
+          comp: WeiBao
         }
       ]
     }

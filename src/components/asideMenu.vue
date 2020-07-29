@@ -75,14 +75,14 @@ export default {
   /*@import "~@/style/var.scss";*/
   .aside{
     width: (298px * 100vw / $screenWidth);
-    height: (734px * 100vh / $screenHeight);
+    height: (774px * 100vh / $screenHeight);
     background: url("~@/assets/img/menu-bg.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
     top: (163px * 100vh / $screenHeight);
     left: (22px * 100vw / $screenWidth);
     z-index: 1;
-    padding-top: (50px * 100vh / $screenHeight);
+    padding-top: (46px * 100vh / $screenHeight);
     .item{
       cursor: pointer;
       z-index: 2;
@@ -92,7 +92,7 @@ export default {
         width: (247px * 100vw / $screenWidth);
         height: (91px * 100vh / $screenHeight);
         margin-left: (17px * 100vw / $screenWidth);
-        margin-bottom: (18px * 100vh / $screenHeight);
+        margin-bottom: (8px * 100vh / $screenHeight);
         background: url("~@/assets/img/menu-button.png") no-repeat;
         background-size: 100% 100%;
         font-family:NotoSansHans-Regular,serif;
@@ -103,7 +103,7 @@ export default {
           width: (247px * 100vw / $screenWidth);
           height: (91px * 100vh / $screenHeight);
           margin-left: (17px * 100vw / $screenWidth);
-          margin-bottom: (18px * 100vh / $screenHeight);
+          margin-bottom: (8px * 100vh / $screenHeight);
           background: url("~@/assets/img/menu-botton-select.png") no-repeat;
           background-size: 100% 100%;
           font-family: NotoSansHans-Bold,serif;
@@ -117,7 +117,7 @@ export default {
         width: (195px * 100vw / $screenWidth);
         height: (58px * 100vh / $screenHeight);
         margin-left: (88px * 100vw / $screenWidth);
-        margin-bottom: (40px * 100vh / $screenHeight);
+        margin-bottom: (36px * 100vh / $screenHeight);
         background: url("~@/assets/img/sub-menu-button.png") no-repeat;
         background-size: 100% 100%;
         font-family:NotoSansHans-Regular,serif;

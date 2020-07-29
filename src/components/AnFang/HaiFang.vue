@@ -6,7 +6,13 @@
     <div class="detail">
       平台综合运用北斗卫星定位、远程视频监控、光电雷达、无线探针等最新现代技术装备，实时采集、传输动态信息，有效推进船舶智能化监管和海防警务统一调度指挥，强化海上执法力量，打击海上犯罪活动，维护国家海洋权益，服务地方经济发展。
     </div>
-    <div class="describe"></div>
+    <div class="describe text-shadow">
+      <span>融合现代高新技术</span>
+      <span>综合可视化概览</span>
+      <span>警务精细化指挥调度</span>
+      <span>沿海要素智能化管控</span>
+      <span>公众便民服务高度拓展</span>
+    </div>
   </div>
 </template>
 
@@ -56,14 +62,18 @@ export default {
       bottom: 0;
       left: 0;
     }
-    /*.describe{
-      width: (185px * 100vw / $screenWidth);
-      height: (264px * 100vh / $screenHeight);
-      background: url("~@/assets/img/describe-yingji.png") no-repeat;
-      background-size: 100% 100%;
+    .describe{
+      width: (300px * 100vw / $screenWidth);
+      //height: (300px * 100vh / $screenHeight);
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
       position: absolute;
-      top: (145px * 100vh / $screenHeight);
+      top: (158px * 100vh / $screenHeight);
       right: 0;
-    }*/
+      span{
+        margin-bottom: (69px * 100vh / $screenHeight);
+      }
+    }
   }
 </style>

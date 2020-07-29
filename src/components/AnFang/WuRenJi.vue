@@ -6,7 +6,11 @@
     <div class="detail">
       一方面是实现对无人机涉及企业、个人、设备、场所的信息备案监管并进行预防和管控；另一方面实现无人机的地图可视化， 灵活设置禁飞区域，黑飞侦测识别、驱赶拦截。
     </div>
-    <div class="describe"></div>
+    <div class="describe text-shadow">
+      <span>打破数据孤岛，实现互联互通</span>
+      <span>安全高效预警，应急指挥辅助</span>
+      <span>PC和APP一体化</span>
+    </div>
   </div>
 </template>
 
@@ -56,14 +60,18 @@ export default {
       bottom: 0;
       left: 0;
     }
-    /*.describe{
-      width: (297px * 100vw / $screenWidth);
-      height: (508px * 100vh / $screenHeight);
-      background: url("~@/assets/img/describe-ab.png") no-repeat;
-      background-size: 100% 100%;
+    .describe{
+      width: (400px * 100vw / $screenWidth);
+      //height: (225px * 100vh / $screenHeight);
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
       position: absolute;
-      top: (48px * 100vh / $screenHeight);
+      top: (158px * 100vh / $screenHeight);
       right: 0;
-    }*/
+      span{
+        margin-bottom: (69px * 100vh / $screenHeight);
+      }
+    }
   }
 </style>

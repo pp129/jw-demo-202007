@@ -46,7 +46,7 @@ export default {
       color: #FFFFFF;
       text-align: left;
       vertical-align: middle;
-      font-size: (36px * 100vh / $screenHeight);
+      font-size: (42px * 100vh / $screenHeight);
       /*padding: 83px 70px;*/
       padding: (83px * 100vh / $screenHeight) (70px * 100vw / $screenWidth) 0 (70px * 100vw / $screenWidth);
       text-indent: (72px * 100vw / $screenWidth);
