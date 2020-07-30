@@ -2,6 +2,7 @@ module.exports = {
   publicPath: '',
   // 输出文件目录
   outputDir: '智慧警务',
+  assetsDir: 'static',
   devServer: {
     hotOnly: false,
     open: true
