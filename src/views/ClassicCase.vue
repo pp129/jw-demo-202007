@@ -4,14 +4,9 @@
     <span class="case-title">{{ caseTitle }}</span>
     <swiper :options="swiperOption" ref="swiper" @slideChange="slideChange">
       <swiper-slide><div class="item item-1"></div></swiper-slide>
-<!--      <swiper-slide><div class="item item-2"></div></swiper-slide>-->
+      <swiper-slide><div class="item item-2"></div></swiper-slide>
       <swiper-slide><div class="item item-3"></div></swiper-slide>
       <swiper-slide><div class="item item-4"></div></swiper-slide>
-<!--      <swiper-slide><div class="item item-5"></div></swiper-slide>-->
-      <swiper-slide><div class="item item-6"></div></swiper-slide>
-<!--      <swiper-slide><div class="item item-7"></div></swiper-slide>-->
-<!--      <swiper-slide><div class="item item-8"></div></swiper-slide>-->
-<!--      <swiper-slide><div class="item item-9"></div></swiper-slide>-->
     </swiper>
   </div>
 </template>
@@ -35,14 +30,9 @@ export default {
       caseTitle: '',
       titles: [
         '交通大数据分析应用',
-        // '交通大数据分析应用平台',
         '南昌警卫安保指挥平台',
         '金砖厦门会晤警卫安保',
-        // '可视化大屏展示系统',
-        '可视化勤务指挥支撑平台',
-        '雷达多目标检测',
-        '青岛上合峰会安保',
-        '山东边防智能化综合指挥'
+        '可视化勤务指挥支撑平台'
       ],
       swiperOption: {
         initialSlide: 0,
@@ -113,41 +103,18 @@ export default {
                     no-repeat;
                 background-size: 100% 100%;
             }
-            /*&-2 {*/
-            /*    background: url("~@/assets/img/case/交通大数据分析应用平台.png")*/
-            /*        no-repeat;*/
-            /*    background-size: 100% 100%;*/
-            /*}*/
-            &-3 {
+            &-2 {
                 background: url("~@/assets/img/case/南昌安保.png")
                     no-repeat;
                 background-size: 100% 100%;
             }
-            &-4 {
+            &-3 {
                 background: url("~@/assets/img/case/金砖厦门会晤警卫安保.png")
                     no-repeat;
                 background-size: 100% 100%;
             }
-            /*&-5 {*/
-            /*    background: url("~@/assets/img/case/可视化大屏展示系统.png")*/
-            /*        no-repeat;*/
-            /*    background-size: 100% 100%;*/
-            /*}*/
-            &-6 {
+            &-4 {
                 background: url("~@/assets/img/case/可视化勤务.png")
-                    no-repeat;
-                background-size: 100% 100%;
-            }
-            &-7 {
-                background: url("~@/assets/img/case/雷达多目标检测.png") no-repeat;
-                background-size: 100% 100%;
-            }
-            &-8 {
-                background: url("~@/assets/img/case/青岛上合峰会安保.png") no-repeat;
-                background-size: 100% 100%;
-            }
-            &-9 {
-                background: url("~@/assets/img/case/山东边防智能化综合指挥.png")
                     no-repeat;
                 background-size: 100% 100%;
             }

@@ -95,11 +95,11 @@ export default {
       width: (499px * 100vw / $screenWidth2);
       height: (298px * 100vh / $screenHeight2);
       .item {
-        width: (397px * 100vw / $screenWidth2);
-        height: (244px * 100vh / $screenHeight2);
+        width: 90%;
+        height: 82%;
         position: absolute;
-        top: (28px * 100vh / $screenHeight2);
-        left: (52px * 100vw / $screenWidth2);
+        top: 9%;
+        left: 4%;
         border: 0.3vw solid rgba(22, 208, 255, 0.9);
         border-radius: 3rem;
         box-shadow: 0 0 3rem rgba(22, 208, 255, 1);
@@ -125,7 +125,7 @@ export default {
       background-size: 100% 100%;
       .item {
         border: 0;
-        border-radius: 0;
+        border-radius: 1vw;
         box-shadow: none;
       }
     }

@@ -6,7 +6,12 @@
     <div class="detail">
       针对重大活动安保和领导日常出行场景，通过监测交通特勤任务指挥各个环节，排除风险，为重要嘉宾和领导提供安全、有序、顺畅、高效交通出行保障。全方位“可视、可防、可控”
     </div>
-    <div class="describe"></div>
+    <div class="describe text-shadow">
+      <span>全程可视化展示</span>
+      <span>事前规划</span>
+      <span>事中跟踪</span>
+      <span>事后研判</span>
+    </div>
   </div>
 </template>
 
@@ -57,6 +62,19 @@ export default {
       left: 0;
     }
     .describe{
+      width: (179px * 100vw / $screenWidth);
+      //height: (300px * 100vh / $screenHeight);
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
+      position: absolute;
+      top: (148px * 100vh / $screenHeight);
+      right: 0;
+      span{
+        margin-bottom: (69px * 100vh / $screenHeight);
+      }
+    }
+    /*.describe{
       width: (279px * 100vw / $screenWidth);
       height: (391px * 100vh / $screenHeight);
       background: url("~@/assets/img/describe-tqab.png") no-repeat;
@@ -64,6 +82,6 @@ export default {
       position: absolute;
       top: (129px * 100vh / $screenHeight);
       right: 0;
-    }
+    }*/
   }
 </style>

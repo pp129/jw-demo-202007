@@ -39,7 +39,7 @@ export default {
       .screenshot{
         width: 91%;
         height: 83%;
-        background: url("~@/assets/img/智慧海防/无人机.jpg") no-repeat;
+        background: url("~@/assets/img/智慧海防/无人机.png") no-repeat;
         background-size: 100% 100%;
         position: absolute;
         top: (55px * 100vh / $screenHeight);

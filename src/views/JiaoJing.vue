@@ -20,7 +20,7 @@ export default {
   data () {
     return {
       timer: null,
-      step: 30000, // 30000
+      step: 300000, // 30000
       menuIndex: 0,
       menus: [
         {
