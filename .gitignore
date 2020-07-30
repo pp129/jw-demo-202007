@@ -19,5 +19,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+*.zip
+*.rar
 /智慧警务/
-/智慧警务.zip

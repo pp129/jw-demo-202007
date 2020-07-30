@@ -39,7 +39,7 @@ export default {
       .screenshot{
         width: 91%;
         height: 83%;
-        background: url("~@/assets/img/智慧公安/地铁安保.jpg") no-repeat;
+        background: url("~@/assets/img/智慧公安/厦门地铁公交智慧防控系统.png") no-repeat;
         background-size: 100% 100%;
         position: absolute;
         top: (55px * 100vh / $screenHeight);
