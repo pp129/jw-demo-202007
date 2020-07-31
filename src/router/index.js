@@ -7,6 +7,7 @@ import AnFang from '../views/AnFang.vue'
 import JunYing from '../views/JunYing.vue'
 import HonoraryAndCertificate from '../views/HonoraryAndCertificate'
 import ClassicCase from '../views/ClassicCase'
+import pageAI from '../views/pageAI'
 
 Vue.use(VueRouter)
 
@@ -46,6 +47,11 @@ const routes = [
     path: '/JunYing',
     name: 'JunYing',
     component: JunYing
+  },
+  {
+    path: '/pageAI',
+    name: 'pageAI',
+    component: pageAI
   }
 ]
 
