@@ -94,7 +94,7 @@ export default {
         text-align: center;
         span {
             font-size: 2rem;
-            font-family: NotoSansHans-Regular, serif;
+            font-family: SourceHanSansCN-Regular, serif;
             font-weight: 400;
             color: rgba(0, 180, 241, 1);
             line-height: 4rem;

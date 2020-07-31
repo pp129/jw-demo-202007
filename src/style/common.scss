@@ -6,7 +6,8 @@ body {
   list-style: none;
   width: 100vw;
   height: 100vh;
-  font-family: "NotoSansHans-Regular", Helvetica, Arial, sans-serif;
+  font-family: "SourceHanSansCN-Regular", Helvetica, Arial, sans-serif;
+  font-size: (26px * 100vh / $screenHeight);
   overflow: hidden;
 }
 p {
@@ -24,7 +25,7 @@ li {
   position: relative;
   top: 0;
   left: 0;
-  background: url("~@/assets/img/bg.png") no-repeat;
+  background: url("~@/assets/img/bg.jpg") no-repeat;
   background-size: 100% 100%;
   .home {
     > .main,
@@ -35,7 +36,7 @@ li {
       //top: calc(~"92*@{ph}vh");
       overflow: hidden;
       > .title {
-        font-family: "NotoSansHans-Bold", sans-serif;
+        font-family: "SourceHanSansCN-Bold", sans-serif;
         //font-size: calc(~"29*@{ph}vh");
         background: linear-gradient(
           180deg,
@@ -58,7 +59,7 @@ li {
       }
     }
   }
-  .logo{
+  >.logo{
     position: absolute;
     bottom: (60px * 100vh / $screenHeight);
     right: (28px * 100vw / $screenWidth);
@@ -70,20 +71,24 @@ li {
   }
   .icon-home{
     display: block;
-    width: (40px * 100vw / $screenWidth);
-    height: (41px * 100vh / $screenHeight);
-    background: url("~@/assets/img/home.png") no-repeat;
+    width: (72px * 100vw / $screenWidth);
+    height: (72px * 100vh / $screenHeight);
+    background: url("~@/assets/img/首页1.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
     top: (35px * 100vh / $screenHeight);
     right: (166px * 100vw / $screenWidth);
     cursor: pointer;
+    &:hover{
+      background: url("~@/assets/img/首页2.png") no-repeat;
+      background-size: 100% 100%;
+    }
   }
   .icon-back{
     display: block;
-    width: (37px * 100vw / $screenWidth);
-    height: (39px * 100vh / $screenHeight);
-    background: url("~@/assets/img/back.png") no-repeat;
+    width: (72px * 100vw / $screenWidth);
+    height: (72px * 100vh / $screenHeight);
+    background: url("~@/assets/img/返回1.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
     //top: (38px * 100vh / $screenHeight);
@@ -91,6 +96,10 @@ li {
     top: (35px * 100vh / $screenHeight);
     right: (166px * 100vw / $screenWidth);
     cursor: pointer;
+    &:hover{
+      background: url("~@/assets/img/返回2.png") no-repeat;
+      background-size: 100% 100%;
+    }
   }
   .text-shadow{
     font-size:(26px * 100vh / $screenHeight);

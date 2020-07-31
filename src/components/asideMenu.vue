@@ -95,7 +95,7 @@ export default {
         margin-bottom: (8px * 100vh / $screenHeight);
         background: url("~@/assets/img/menu-button.png") no-repeat;
         background-size: 100% 100%;
-        font-family:NotoSansHans-Regular,serif;
+        font-family:SourceHanSansCN-Regular,serif;
         font-size: (20px * 100vh / $screenHeight);
         line-height: 2.5;
         text-indent: 3vw;
@@ -106,7 +106,7 @@ export default {
           margin-bottom: (8px * 100vh / $screenHeight);
           background: url("~@/assets/img/menu-botton-select.png") no-repeat;
           background-size: 100% 100%;
-          font-family: NotoSansHans-Bold,serif;
+          font-family: SourceHanSansCN-Bold,serif;
           font-size: (20px * 100vh / $screenHeight);
           color: #00FFFF;
           line-height: 2.5;
@@ -120,7 +120,7 @@ export default {
         margin-bottom: (36px * 100vh / $screenHeight);
         background: url("~@/assets/img/sub-menu-button.png") no-repeat;
         background-size: 100% 100%;
-        font-family:NotoSansHans-Regular,serif;
+        font-family:SourceHanSansCN-Regular,serif;
         font-size: (17px * 100vh / $screenHeight);
         line-height: 3.5;
         /*text-indent: 1vw;*/
@@ -131,7 +131,7 @@ export default {
           margin-bottom: (21px * 100vh / $screenHeight);
           background: url("~@/assets/img/sub-menu-button-select.png") no-repeat;
           background-size: 100% 100%;
-          font-family: NotoSansHans-Bold,serif;
+          font-family: SourceHanSansCN-Bold,serif;
           font-size: (21px * 100vh / $screenHeight);
           color: #00FFFF;
           line-height: 2.7;

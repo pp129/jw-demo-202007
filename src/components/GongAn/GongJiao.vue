@@ -50,8 +50,8 @@ export default {
     .detail{
       width: (1381px * 100vw / $screenWidth);
       height: (78px * 100vh / $screenHeight);
-      font-family: "SourceHanSerifCN-Medium", Helvetica, Arial, sans-serif;
-      font-size:(24px * 100vh / $screenHeight);
+      font-family: "SourceHanSansCN-Regular", Helvetica, Arial, sans-serif;
+      //font-size:(24px * 100vh / $screenHeight);
       font-weight:bold;
       text-indent: (48px * 100vw / $screenWidth);
       line-height: 1.5;
