@@ -93,11 +93,11 @@ export default {
       background-size: 100% 100%;
         text-align: center;
         span {
-            font-size: 2rem;
+            font-size: (20px * 100vh / $screenHeight2);
             font-family: SourceHanSansCN-Regular, serif;
             font-weight: 400;
             color: rgba(0, 180, 241, 1);
-            line-height: 4rem;
+            line-height: (40px * 100vh / $screenHeight2);
         }
         &-active {
             width: (167px * 100vw / $screenWidth2);
