@@ -1,14 +1,27 @@
 <template>
   <div id="app">
-    <j-title></j-title>
+    <j-title v-if="showTitleAndLogo"></j-title>
     <router-view/>
-    <div class="logo"></div>
+    <div v-if="showTitleAndLogo" class="logo"></div>
   </div>
 </template>
 <script>
 import jTitle from '@/components/jTitle'
 export default {
-  components: { jTitle }
+  components: { jTitle },
+  data () {
+    return {
+      showTitleAndLogo: true
+    }
+  },
+  watch: {
+    $route: {
+      handler (newRouter) {
+        this.showTitleAndLogo = newRouter.name !== 'pageAI'
+      },
+      immediate: true
+    }
+  }
 }
 </script>
 <style lang="scss">

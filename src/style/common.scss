@@ -86,20 +86,20 @@ li {
   }
   .icon-back{
     display: block;
-    width: (72px * 100vw / $screenWidth);
-    height: (72px * 100vh / $screenHeight);
-    background: url("~@/assets/img/返回1.png") no-repeat;
+    width: (41px * 100vw / $screenWidth);
+    height: (42px * 100vh / $screenHeight);
+    background: url("~@/assets/img/返回.jpg") no-repeat;
     background-size: 100% 100%;
     position: absolute;
     //top: (38px * 100vh / $screenHeight);
     //right: (82px * 100vw / $screenWidth);
-    top: (35px * 100vh / $screenHeight);
-    right: (166px * 100vw / $screenWidth);
+    top: (45px * 100vh / $screenHeight);
+    right: (176px * 100vw / $screenWidth);
     cursor: pointer;
-    &:hover{
-      background: url("~@/assets/img/返回2.png") no-repeat;
-      background-size: 100% 100%;
-    }
+    //&:hover{
+    //  background: url("~@/assets/img/返回2.png") no-repeat;
+    //  background-size: 100% 100%;
+    //}
   }
   .text-shadow{
     font-size:(26px * 100vh / $screenHeight);
