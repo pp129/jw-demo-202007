@@ -1,10 +1,17 @@
 <template>
-    <div class="pageAi"></div>
+    <div class="pageAi">
+      <span class="icon-home" @click="home"></span>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'pageAI'
+  name: 'pageAI',
+  methods: {
+    home () {
+      window.location.href = window.HomeUrl
+    }
+  }
 }
 </script>
 
