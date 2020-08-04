@@ -62,7 +62,7 @@ export default {
       left: 0;
     }
     .describe{
-      width: (179px * 100vw / $screenWidth);
+      width: (185px * 100vw / $screenWidth);
       //height: (300px * 100vh / $screenHeight);
       display: flex;
       flex-direction: column;

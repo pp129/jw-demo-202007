@@ -16,7 +16,7 @@ export default {
   width: (545px * 100vw / $screenWidth);
   height: (60px * 100vh / $screenHeight);
   position: absolute;
-  top: (24px * 100vh / $screenHeight);
+  top: (74px * 100vh / $screenHeight);
   left: 50%;
   margin-left: (-272.5px * 100vw / $screenWidth);
   display: flex;

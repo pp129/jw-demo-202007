@@ -6,7 +6,12 @@
     <div class="detail">
       可视化勤务指挥平台，围绕“勤务态势、勤务部署、勤务督导、勤务研判、勤务信息、勤务管理、移动勤务”进行应用建设，从派出所到市局的跨层级一体化管理。满足治安警、巡特警、交警等细分警种不同的勤务应用场景需求。
     </div>
-    <div class="describe"></div>
+    <div class="describe text-shadow">
+      <span>勤务大数据</span>
+      <span>分类勤务部署</span>
+      <span>智能指挥调度</span>
+      <span>实战考评体系</span>
+    </div>
   </div>
 </template>
 
@@ -58,12 +63,16 @@ export default {
     }
     .describe{
       width: (184px * 100vw / $screenWidth);
-      height: (365px * 100vh / $screenHeight);
-      background: url("~@/assets/img/descirbe-qwksh.png") no-repeat;
-      background-size: 100% 100%;
+      //height: (300px * 100vh / $screenHeight);
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
       position: absolute;
-      top: (146px * 100vh / $screenHeight);
+      top: (158px * 100vh / $screenHeight);
       right: 0;
+      span{
+        margin-bottom: (69px * 100vh / $screenHeight);
+      }
     }
   }
 </style>
