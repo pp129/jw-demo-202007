@@ -34,7 +34,7 @@ export default {
       height: (632px * 100vh / $screenHeight);
       position: absolute;
       top: 0;
-      left: 0;
+      left: (50px * 100vw / $screenWidth);
       background: url("~@/assets/img/web-bg.png") no-repeat;
       background-size: 100% 100%;
       .screenshot{

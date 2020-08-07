@@ -27,7 +27,7 @@ export default {
       height: (503px * 100vh / $screenHeight);
       position: absolute;
       top: 0;
-      left: 0;
+      left: (100px * 100vw / $screenWidth);
       background: url("~@/assets/img/智慧交通管控.png") no-repeat;
       background-size: 100% 100%;
     }

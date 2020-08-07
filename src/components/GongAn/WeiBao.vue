@@ -32,7 +32,7 @@ export default {
       height: (632px * 100vh / $screenHeight);
       position: absolute;
       top: 0;
-      left: 0;
+      left: (50px * 100vw / $screenWidth);
       background: url("~@/assets/img/web-bg.png") no-repeat;
       background-size: 100% 100%;
       .screenshot{
@@ -60,7 +60,7 @@ export default {
       left: 0;
     }
     .describe{
-      width: (400px * 100vw / $screenWidth);
+      width: (300px * 100vw / $screenWidth);
       //height: (300px * 100vh / $screenHeight);
       display: flex;
       flex-direction: column;

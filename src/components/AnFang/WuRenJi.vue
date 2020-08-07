@@ -33,7 +33,7 @@ export default {
       height: (632px * 100vh / $screenHeight);
       position: absolute;
       top: 0;
-      left: 0;
+      left: (50px * 100vw / $screenWidth);
       background: url("~@/assets/img/web-bg.png") no-repeat;
       background-size: 100% 100%;
       .screenshot{
@@ -58,7 +58,7 @@ export default {
       color:#FFFFFF;
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: (50px * 100vw / $screenWidth);
     }
     .describe{
       width: (400px * 100vw / $screenWidth);
@@ -67,7 +67,7 @@ export default {
       flex-direction: column;
       //justify-content: space-between;
       position: absolute;
-      top: (158px * 100vh / $screenHeight);
+      top: (198px * 100vh / $screenHeight);
       right: 0;
       span{
         margin-bottom: (69px * 100vh / $screenHeight);

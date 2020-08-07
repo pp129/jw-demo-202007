@@ -1,13 +1,16 @@
 <template>
-  <div class="title">
+  <div class="title" :class="title==='警务大数据AI应用平台'?'title_ai':''">
     <i class="logo"></i>
-    <p>北斗智慧警务大脑</p>
+    <p>{{title}}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'jTitle'
+  name: 'jTitle',
+  props: {
+    title: String
+  }
 }
 </script>
 
@@ -16,12 +19,16 @@ export default {
   width: (545px * 100vw / $screenWidth);
   height: (60px * 100vh / $screenHeight);
   position: absolute;
-  top: (74px * 100vh / $screenHeight);
+  top: (34px * 100vh / $screenHeight);
   left: 50%;
   margin-left: (-272.5px * 100vw / $screenWidth);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &.title_ai{
+    width: (645px * 100vw / $screenWidth);
+    margin-left: (-322.5px * 100vw / $screenWidth);
+  }
   i{
     display: block;
     width: (72px * 100vw / $screenWidth);

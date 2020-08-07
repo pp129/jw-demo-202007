@@ -46,12 +46,13 @@ export default {
       color: #FFFFFF;
       text-align: left;
       vertical-align: middle;
-      font-size: (42px * 100vh / $screenHeight);
+      font-size: (38px * 100vh / $screenHeight);
       /*padding: 83px 70px;*/
-      padding: (73px * 100vh / $screenHeight) (70px * 100vw / $screenWidth) 0 (70px * 100vw / $screenWidth);
-      text-indent: (72px * 100vw / $screenWidth);
+      padding: (60px * 100vh / $screenHeight) (80px * 100vw / $screenWidth) 0 (80px * 100vw / $screenWidth);
+      text-indent: (84px * 100vw / $screenWidth);
       line-height: (58px * 100vh / $screenHeight);
       box-sizing: border-box;
+      letter-spacing: 0.2vw;
     }
     .menu{
       width: (182px * 100vw / $screenWidth);

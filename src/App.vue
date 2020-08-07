@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <j-title v-if="showTitleAndLogo"></j-title>
+    <j-title :title="title"></j-title>
     <router-view/>
-    <div v-if="showTitleAndLogo" class="logo"></div>
+<!--    <div class="logo"></div>-->
   </div>
 </template>
 <script>
@@ -11,13 +11,17 @@ export default {
   components: { jTitle },
   data () {
     return {
-      showTitleAndLogo: true
+      title: '北斗智慧警务大脑'
     }
   },
   watch: {
     $route: {
       handler (newRouter) {
-        this.showTitleAndLogo = newRouter.name !== 'pageAI'
+        if (newRouter.name !== 'pageAI') {
+          this.title = '北斗智慧警务大脑'
+        } else {
+          this.title = '警务大数据AI应用平台'
+        }
       },
       immediate: true
     }
