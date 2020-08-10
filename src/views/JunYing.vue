@@ -1,7 +1,9 @@
 <template>
   <div class="content">
     <span class="icon-back" @click="home"></span>
-    <div class="web"></div>
+    <div class="web">
+      <div class="screenshot"></div>
+    </div>
     <div class="detail">
       紧密结合武警实际业务需求的实战系统， 通过对反恐处突任务的流程化、智能化管理，保证反恐处突的及时性、准确性，大幅提升掌握现场、指挥作战的能力。通过三维建模，并整合各类安保活动资源，实现安保可视化全程跟踪、应急指挥调度，确保场馆安保“可视、可防、可控”
     </div>
@@ -32,14 +34,33 @@ export default {
     height: 100%;
     position: relative;
     overflow: hidden;
+    /*.web{
+      width: (1210px * 100vw / $screenWidth);
+      height: (613.4px * 100vh / $screenHeight);
+      position: absolute;
+      top: (175px * 100vh / $screenHeight);
+      left: (147px * 100vw / $screenWidth);
+      background: url("~@/assets/img/武警一体化.png") no-repeat;
+      background-size: 100% 100%;
+    }*/
     .web{
       width: (1210px * 100vw / $screenWidth);
       height: (613.4px * 100vh / $screenHeight);
       position: absolute;
       top: (175px * 100vh / $screenHeight);
       left: (147px * 100vw / $screenWidth);
-      background: url("~@/assets/img/web-wujing.png") no-repeat;
+      background: url("~@/assets/img/web-bg.png") no-repeat;
       background-size: 100% 100%;
+      .screenshot{
+        width: 91%;
+        height: 83%;
+        background: url("~@/assets/img/武警一体化.png") no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: (55px * 100vh / $screenHeight);
+        left: (43px * 100vw / $screenWidth);
+        border-radius: 1vw;
+      }
     }
     .detail{
       width: (1326px * 100vw / $screenWidth);

@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <span class="icon-home" @click="home"></span>
+    <span v-if="isShowHome" class="icon-home" @click="home"></span>
     <div class="box">
       面向公安、交警、司法、军营等领域，基于北斗高精度、物联网、云计算、5G、大数据和人工智能等技术， 汇聚警员、警情、警备、勤务、视频、检测器、事件等全要素警务资源，提供治安防控、勤务实战、交通管控、特勤安保、应急指挥、便民服务等多个方面的解决方案和信息服务。
     </div>
     <div class="menu menu-gongan" @click="routerTo('GongAn')"></div>
     <div class="menu menu-jiaojing" @click="routerTo('JiaoJing')"></div>
-    <div class="menu menu-anfang" @click="routerTo('AnFang')"></div>
+    <div class="menu menu-sifa" @click="routerTo('AnFang')"></div>
     <div class="menu menu-junying" @click="routerTo('JunYing')"></div>
     <dock></dock>
   </div>
@@ -75,6 +75,13 @@ export default {
       }
       &-anfang{
         background: url("~@/assets/img/智慧安防.png") no-repeat;
+        background-size: 100% 100%;
+        bottom: (160px * 100vh / $screenHeight);
+        left: (280px * 100vw / $screenWidth);
+        animation: heart2 3s ease-in-out 0s infinite alternate;
+      }
+      &-sifa{
+        background: url("~@/assets/img/智慧司法.png") no-repeat;
         background-size: 100% 100%;
         bottom: (160px * 100vh / $screenHeight);
         left: (280px * 100vw / $screenWidth);

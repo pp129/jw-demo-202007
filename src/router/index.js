@@ -15,41 +15,65 @@ const routes = [
   { path: '*', name: '*', redirect: '/', meta: {} },
   {
     path: '/',
+    meta: {
+      title: '北斗智慧警务大脑'
+    },
     name: 'Home',
     component: Home
   },
   {
     path: '/HonoraryAndCertificate',
+    meta: {
+      title: '北斗智慧警务大脑'
+    },
     name: 'HonoraryAndCertificate',
     component: HonoraryAndCertificate
   },
   {
     path: '/ClassicCase',
+    meta: {
+      title: '北斗智慧警务大脑'
+    },
     name: 'ClassicCase',
     component: ClassicCase
   },
   {
     path: '/GongAn',
+    meta: {
+      title: '北斗智慧警务公安'
+    },
     name: 'GongAn',
     component: GongAn
   },
   {
     path: '/JiaoJing',
+    meta: {
+      title: '北斗智慧警务交警'
+    },
     name: 'JiaoJing',
     component: JiaoJing
   },
   {
     path: '/AnFang',
+    meta: {
+      title: '北斗智慧警务司法'
+    },
     name: 'AnFang',
     component: AnFang
   },
   {
     path: '/JunYing',
+    meta: {
+      title: '北斗智慧警务军营'
+    },
     name: 'JunYing',
     component: JunYing
   },
   {
     path: '/pageAI',
+    meta: {
+      title: '警务大数据AI应用平台'
+    },
     name: 'pageAI',
     component: pageAI
   }

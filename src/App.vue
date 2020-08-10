@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <j-title :title="title"></j-title>
+    <j-title v-if="showTitle" :title="title"></j-title>
     <router-view/>
 <!--    <div class="logo"></div>-->
   </div>
@@ -11,17 +11,15 @@ export default {
   components: { jTitle },
   data () {
     return {
+      showTitle: true,
       title: '北斗智慧警务大脑'
     }
   },
   watch: {
     $route: {
       handler (newRouter) {
-        if (newRouter.name !== 'pageAI') {
-          this.title = '北斗智慧警务大脑'
-        } else {
-          this.title = '警务大数据AI应用平台'
-        }
+        this.showTitle = newRouter.name !== 'pageAI'
+        this.title = newRouter.meta.title
       },
       immediate: true
     }

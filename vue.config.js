@@ -16,22 +16,22 @@ const compress = new CompressionWebpackPlugin({
   deleteOriginalAssets: false // 删除原文件
 })
 module.exports = {
-  publicPath: '',
+  publicPath: './',
   // 输出文件目录
   outputDir: '智慧警务',
   assetsDir: 'static',
   productionSourceMap: false,
   devServer: {
     hotOnly: false,
-    open: true,
+    open: true
     // 在本地服务器开启gzip，线上服务器都支持gzip不需要设置
-    before (app) {
-      app.get(/.*.(js)$/, (req, res, next) => {
-        req.url = req.url + '.gz'
-        res.set('Content-Encoding', 'gzip')
-        next()
-      })
-    }
+    // before (app) {
+    //   app.get(/.*.(js)$/, (req, res, next) => {
+    //     req.url = req.url + '.gz'
+    //     res.set('Content-Encoding', 'gzip')
+    //     next()
+    //   })
+    // }
   },
   configureWebpack: {
     devtool: 'source-map',
