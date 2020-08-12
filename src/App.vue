@@ -18,7 +18,7 @@ export default {
   watch: {
     $route: {
       handler (newRouter) {
-        this.showTitle = newRouter.name !== 'pageAI'
+        // this.showTitle = newRouter.name !== 'pageAI'
         this.title = newRouter.meta.title
       },
       immediate: true

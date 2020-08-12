@@ -63,7 +63,7 @@ export default {
       }
     }
     .detail{
-      width: (1326px * 100vw / $screenWidth);
+      width: (1537px * 100vw / $screenWidth);
       height: (131px * 100vh / $screenHeight);
       font-family: "SourceHanSansCN-Regular", Helvetica, Arial, sans-serif;
       //font-size:(24px * 100vh / $screenHeight);

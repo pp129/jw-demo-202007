@@ -24,7 +24,7 @@ export default {
 
 <style scoped lang="scss" type="text/scss">
   .content{
-    width: (1555px * 100vw / $screenWidth);
+    width: (1460px * 100vw / $screenWidth);
     height: (756px * 100vh / $screenHeight);
     position: absolute;
     top: (159px * 100vh / $screenHeight);
@@ -50,8 +50,8 @@ export default {
       }
     }
     .detail{
-      width: (1200px * 100vw / $screenWidth);
-      height: (128px * 100vh / $screenHeight);
+      width: (1410px * 100vw / $screenWidth);
+      //height: (128px * 100vh / $screenHeight);
       font-family: "SourceHanSansCN-Regular", Helvetica, Arial, sans-serif;
       //font-size:(24px * 100vh / $screenHeight);
       font-weight:bold;
@@ -63,7 +63,7 @@ export default {
       left: (50px * 100vw / $screenWidth);
     }
     .describe{
-      width: (300px * 100vw / $screenWidth);
+      width: (243px * 100vw / $screenWidth);
       //height: (300px * 100vh / $screenHeight);
       display: flex;
       flex-direction: column;

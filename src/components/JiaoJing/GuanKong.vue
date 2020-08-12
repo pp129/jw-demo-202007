@@ -32,8 +32,8 @@ export default {
       background-size: 100% 100%;
     }
     .detail{
-      width: (1355px * 100vw / $screenWidth);
-      height: (131px * 100vh / $screenHeight);
+      width: (1379px * 100vw / $screenWidth);
+      //height: (131px * 100vh / $screenHeight);
       font-family: "SourceHanSansCN-Regular", Helvetica, Arial, sans-serif;
       //font-size:(24px * 100vh / $screenHeight);
       font-weight:bold;
@@ -42,7 +42,7 @@ export default {
       color:#FFFFFF;
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: (100px * 100vw / $screenWidth);
     }
     .describe{
       width: (286px * 100vw / $screenWidth);

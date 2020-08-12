@@ -22,7 +22,7 @@ export default {
 
 <style scoped lang="scss" type="text/scss">
   .content{
-    width: (1555px * 100vw / $screenWidth);
+    width: (1460px * 100vw / $screenWidth);
     height: (756px * 100vh / $screenHeight);
     position: absolute;
     top: (159px * 100vh / $screenHeight);
@@ -39,7 +39,7 @@ export default {
       .screenshot{
         width: 91%;
         height: 83%;
-        background: url("~@/assets/img/智慧公安/大型活动安保.png") no-repeat;
+        background: url("~@/assets/img/智慧公安/大型活动安保.jpg") no-repeat;
         background-size: 100% 100%;
         position: absolute;
         top: (55px * 100vh / $screenHeight);
@@ -48,8 +48,8 @@ export default {
       }
     }
     .detail{
-      width: (1381px * 100vw / $screenWidth);
-      height: (78px * 100vh / $screenHeight);
+      width: (1410px * 100vw / $screenWidth);
+      //height: (78px * 100vh / $screenHeight);
       font-family: "SourceHanSansCN-Regular", Helvetica, Arial, sans-serif;
       //font-size:(24px * 100vh / $screenHeight);
       font-weight:bold;
@@ -58,10 +58,10 @@ export default {
       color:#FFFFFF;
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: (50px * 100vw / $screenWidth);
     }
     .describe{
-      width: (300px * 100vw / $screenWidth);
+      width: (204px * 100vw / $screenWidth);
       //height: (225px * 100vh / $screenHeight);
       display: flex;
       flex-direction: column;

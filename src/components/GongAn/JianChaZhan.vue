@@ -49,8 +49,8 @@ export default {
       }
     }
     .detail{
-      width: (1381px * 100vw / $screenWidth);
-      height: (78px * 100vh / $screenHeight);
+      width: (1512px * 100vw / $screenWidth);
+      //height: (78px * 100vh / $screenHeight);
       font-family: "SourceHanSansCN-Regular", Helvetica, Arial, sans-serif;
       //font-size:(24px * 100vh / $screenHeight);
       font-weight:bold;
@@ -59,7 +59,7 @@ export default {
       color:#FFFFFF;
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: (43px * 100vw / $screenWidth);
     }
     .describe{
       width: (400px * 100vw / $screenWidth);

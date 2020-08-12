@@ -28,6 +28,7 @@ export default {
   &.title_ai{
     width: (645px * 100vw / $screenWidth);
     margin-left: (-322.5px * 100vw / $screenWidth);
+    z-index: 3;
   }
   i{
     display: block;
